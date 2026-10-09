@@ -317,9 +317,22 @@ fieldset.field { border: 0; margin: 0; padding: 0; }
   .hero-title { font-size: clamp(3.4rem, 6vw, 5.2rem); }
 }
 
+/* ---------- Benefit band ---------- */
+.benefits { background: var(--navy); color: #d5dded; padding: 12px 0; }
+.benefits-grid { display: grid; grid-template-columns: 1fr 1fr; }
+.benefit { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 14px 8px; }
+.benefit + .benefit { border-top: 1px solid rgba(255, 255, 255, 0.14); }
+.benefit strong { color: var(--accent); font-size: 1.2rem; font-weight: 800; line-height: 1.2; }
+.benefit span { font-size: 0.92rem; color: #c3cde0; margin-top: 4px; }
+.benefits-grid .benefit:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
 /* ---------- Responsive ---------- */
 @media (min-width: 760px) {
   .section { padding: 88px 0; }
+  .benefits-grid { grid-template-columns: repeat(5, 1fr); }
+  .benefit { padding: 10px 16px; }
+  .benefit + .benefit { border-top: 0; border-left: 1px solid rgba(255, 255, 255, 0.14); }
+  .benefits-grid .benefit:last-child:nth-child(odd) { grid-column: auto; }
   .hero { padding: 64px 0 88px; }
   .grid-2 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
