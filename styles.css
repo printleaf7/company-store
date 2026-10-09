@@ -292,7 +292,7 @@ fieldset.field { border: 0; margin: 0; padding: 0; }
 .hero-banner-inner { position: relative; flex: 1 1 auto; width: auto; margin-inline: var(--gutter); display: flex; flex-direction: column; padding: 28px 0 32px; text-align: center; }
 .hero-title {
   color: #fff; text-transform: uppercase; font-weight: 900; line-height: 0.98;
-  font-size: clamp(2.3rem, 9vw, 4.4rem); letter-spacing: 0.01em; margin-bottom: 14px;
+  font-size: clamp(2.9rem, 13vw, 4.4rem); letter-spacing: 0.01em; margin-bottom: 14px;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
 }
 .hero-title .accent { color: var(--accent); }
