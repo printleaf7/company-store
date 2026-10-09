@@ -274,7 +274,7 @@ fieldset.field { border: 0; margin: 0; padding: 0; }
 /* ---------- Page-level extras ---------- */
 .page-hero { padding: 40px 0 16px; }
 .page-hero-grid { display: grid; gap: 36px; align-items: center; }
-.audience-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.audience-chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 44px; }
 .chip { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-weight: 600; font-size: 0.92rem; color: var(--navy); }
 
 /* ---------- Hero banner (photo with overlay text) ---------- */
