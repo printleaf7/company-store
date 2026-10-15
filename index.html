@@ -272,12 +272,12 @@
           <p class="lead">Share a few details and your logo. A member of our team will reply within one business day with next steps and a store proposal.</p>
           <ul>
             <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg> No obligation and no upfront cost</li>
-            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg> Logo must be a PNG file (up to 10&nbsp;MB)</li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg> Logo must be a PNG file (up to 4&nbsp;MB)</li>
             <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg> Your details are used only to respond to your request</li>
           </ul>
         </div>
 
-        <form class="lead-form" data-lead-form data-endpoint="" novalidate>
+        <form class="lead-form" data-lead-form data-endpoint="/api/lead" novalidate>
           <input type="hidden" name="source" value="company-stores-business">
           <!-- Honeypot: hidden from people, filled in by bots -->
           <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
@@ -360,7 +360,7 @@
               <label class="dropzone" for="b-logo" data-dropzone>
                 <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-upload"/></svg>
                 <span><strong>Click to upload</strong> or drag your PNG here</span>
-                <span class="hint">PNG only, up to 10&nbsp;MB. Transparent background preferred.</span>
+                <span class="hint">PNG only, up to 4&nbsp;MB. Transparent background preferred.</span>
                 <input type="file" id="b-logo" name="logo" accept="image/png,.png" required>
               </label>
             </div>

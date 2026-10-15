@@ -1,0 +1,8 @@
+{
+  "name": "company-store",
+  "private": true,
+  "description": "Company store landing pages and lead form endpoint",
+  "dependencies": {
+    "busboy": "^1.6.0"
+  }
+}

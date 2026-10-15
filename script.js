@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const MAX_LOGO_BYTES = 10 * 1024 * 1024;
+  const MAX_LOGO_BYTES = 4 * 1024 * 1024;
   const PNG_SIGNATURE = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a];
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -89,7 +89,7 @@
       if (file.size > MAX_LOGO_BYTES) {
         logoInput.value = "";
         clearPreview();
-        setLogoError("Your logo is larger than 10 MB. Please upload a smaller PNG.");
+        setLogoError("Your logo is larger than 4 MB. Please upload a smaller PNG.");
         return false;
       }
       if (!(await hasPngSignature(file))) {
